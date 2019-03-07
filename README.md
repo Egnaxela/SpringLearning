@@ -13,20 +13,22 @@
 
 
 #### SpringFramwork
-Spring框架是一个轻量级的(Spring 全家桶)、Java企业级应用的开源框架。  
+Spring框架是一个轻量级的(Spring 全家桶)、Java企业级应用的开源框架。(3.2.0  4.0.1)  
 是一个分层架构，包含一系列的功能，包含约20个模块。
-![image](https://github.com/Egnaxela/springLearning/img/SpringFramework.png)
+![image](https://github.com/Egnaxela/springLearning/blob/master/img/SpringFramework.png)
 
 1. Core Container  
-
-2. Data Access/Integration
-
-3. Web
-
-4. AOP
-
-5. Test
-
+    核心容器包括Core、Bean、Context和Expression Language模块
+2. Data Access/Integration  
+    包含JDBC、ORM、OXM、JMS和Transaction模块。
+    JMS(Java Messaging Service)模块包含了一些制造和消费消息的特性
+    Transaction模块支持编程和声明式事务管理     
+3. Web  
+    Web上下文模块建立在应用上下文模块之上，为基于Web的应用提供了上下文
+4. AOP  
+    AOP模块提供了符合面向切面编程的实现
+5. Test  
+    Test模块提供了对JUnit和TestNG对Spring组件测试
 #### IOC AOP
 
 
