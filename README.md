@@ -1,9 +1,5 @@
-<p align="center">
-<font face="STCAIYUN" color=green size=5> keep looking until you get it </font>
-</p>
-
+# keep looking until you get it
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iluwatar/java-design-patterns/master/LICENSE.md)
-
 ### Spring源码学习
 
 - [SpringFramework](#SpringFramework)
