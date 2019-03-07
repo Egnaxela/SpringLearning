@@ -1,7 +1,8 @@
-
 <p align="center">
-  <span style="font-weight:bold"> Keep looking until you get it </span>
+<font face="STCAIYUN" color=green size=5> keep looking until you get it </font>
 </p>
+
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iluwatar/java-design-patterns/master/LICENSE.md)
 
 ### Spring源码学习
 
