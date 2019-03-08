@@ -12,3 +12,4 @@ bean配置的引用:可使用 ref属性
 如 [applicationContext.xml](https://github.com/Egnaxela/springLearning/blob/master/src/applicationContext.xml)
 
 #### Bean的生命周期
+
