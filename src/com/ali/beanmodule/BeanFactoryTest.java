@@ -11,6 +11,15 @@
 
 package com.ali.beanmodule;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
 /**  
  * Description:   
  * Copyright:   Copyright (c)2019 
@@ -24,7 +33,17 @@ package com.ali.beanmodule;
  * ------------------------------------------------------------------  
  * 2019Äê3ÔÂ4ÈÕ      Pluto       1.0         1.0 Version  
  */
-
+@SuppressWarnings("deprecation")
 public class BeanFactoryTest {
-
+	
+	@Test
+	public void testSimpleLoad() {
+		BeanFactory context=new XmlBeanFactory(new ClassPathResource("applicationContext.xml"));
+		//ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+		PersonBean bean=(PersonBean)context.getBean("myTestBean");
+		
+		PersonBean bean2=(PersonBean)context.getBean("myTestBean2");
+		System.out.println(bean);
+		System.out.println(bean2);
+	}
 }

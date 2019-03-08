@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="children1" class="com.ali.beanmodule.Children">
+		<property name="firstName" value="Tom"></property>
+		<property name="gender" value="M"></property>
+		<property name="age" value="3"></property>
+	</bean>
+	
+	<bean id="children2" class="com.ali.beanmodule.Children">
+		<constructor-arg value="Tim"></constructor-arg>
+		<constructor-arg value="W"></constructor-arg>
+		<constructor-arg value="5"></constructor-arg>
+	</bean>
+
+	<bean id="myTestBean" class="com.ali.beanmodule.PersonBean">
+		<property name="lastName" value="Tom"></property>
+		<property name="age" value="21"></property>
+		<property name="salary" value="24900.2"></property>
+	</bean>
+	
+	<bean id="myTestBean2" class="com.ali.beanmodule.PersonBean">
+		<constructor-arg value="Jake" ></constructor-arg>
+		<constructor-arg value="Michael" ></constructor-arg>
+		<constructor-arg value="23"></constructor-arg>
+		<constructor-arg value="23567"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<ref bean="children1"/>
+				<ref bean="children2"/>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>

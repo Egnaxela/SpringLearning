@@ -1,0 +1,7 @@
+
+Spring Tools Suite 3 update安装包下载地址
+https://download.springsource.com/release/TOOLS/update/3.9.4.RELEASE/e4.7/springsource-tool-suite-3.9.4.RELEASE-e4.7.3a-updatesite.zip
+
+
+Spring版本jar包
+http://repo.spring.io/release/org/springframework/spring/
