@@ -1,14 +1,16 @@
-####
+#### IOCå®¹å™¨å¸¸è§çš„ä¸¤ç§:  
+1. BeanFactory  
 
+2. ApplicationContext
 
-#### ÒÀÀµ×¢ÈëµÄÁ½ÖÖ·½Ê½:  
-1. ÊôĞÔ×¢Èë
-2. ¹¹ÔìÆ÷×¢Èë
+#### ä¾èµ–æ³¨å…¥çš„ä¸¤ç§æ–¹å¼:  
+1. å±æ€§æ³¨å…¥
+2. æ„é€ å™¨æ³¨å…¥  
+æ³¨æ„ç‚¹ï¼šå±æ€§æ³¨å…¥å¿…é¡»è¦æœ‰ä¸€ä¸ªæ— å‚çš„æ„é€ å™¨ï¼Œå› ä¸ºIOCå®¹å™¨ä¼šè°ƒç”¨æ— å‚æ„é€ å™¨åˆ›å»ºBean  
+beané…ç½®çš„ç»§æ‰¿: ä½¿ç”¨parentå±æ€§
+beané…ç½®ä½ç½®çš„ç¡®å®š: å¯ä½¿ç”¨ type indexå±æ€§
+beané…ç½®ä¸ºé›†åˆç±»å‹ï¼šä½¿ç”¨å¯¹åº”çš„é›†åˆç±»å‹å¦‚  listã€map
+beané…ç½®çš„å¼•ç”¨:å¯ä½¿ç”¨ refå±æ€§
+å¦‚![applicationContext.xml](https://github.com/Egnaxela/springLearning/blob/master/src/applicationContext.xml)
 
-×¢Òâµã£ºÊôĞÔ×¢Èë±ØĞëÒªÓĞÒ»¸öÎŞ²ÎµÄ¹¹ÔìÆ÷£¬ÒòÎªIOC»áµ÷ÓÃÎŞ²Î¹¹ÔìÀà´´½¨Bean
-beanÅäÖÃµÄ¼Ì³Ğ: Ê¹ÓÃparentÊôĞÔ
-beanÅäÖÃÎ»ÖÃµÄÈ·¶¨: ¿ÉÊ¹ÓÃ type indexÊôĞÔ
-beanÅäÖÃÎª¼¯ºÏÀàĞÍ£ºÊ¹ÓÃ¶ÔÓ¦µÄ¼¯ºÏÀàĞÍÈç  list¡¢map
-beanÅäÖÃµÄÒıÓÃ:¿ÉÊ¹ÓÃ refÊôĞÔ
-Èç![applicationContext.xml](https://github.com/Egnaxela/springLearning/blob/master/src/applicationContext.xml)
-
+#### Beançš„ç”Ÿå‘½å‘¨æœŸ
