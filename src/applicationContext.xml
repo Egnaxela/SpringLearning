@@ -2,22 +2,34 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 
+	<!-- 
+		基于setter的属性注入方式,bean中必须要有set方法,必须要有一个无参的构造器
+	 -->
 	<bean id="children1" class="com.ali.beanmodule.Children">
 		<property name="firstName" value="Tom"></property>
 		<property name="gender" value="M"></property>
 		<property name="age" value="3"></property>
 	</bean>
 	
+	<!--  
+		基于构造器的注入方式
+	-->
 	<bean id="children2" class="com.ali.beanmodule.Children">
 		<constructor-arg value="Tim"></constructor-arg>
 		<constructor-arg value="W"></constructor-arg>
 		<constructor-arg value="5"></constructor-arg>
 	</bean>
 	
-	<bean id="children3" parent="children1" p:age="4">
+	<!--  
+		bean之间的继承关系, 用parent属性来表示
+		p:表示命名空间,等同于property,使用前需引入
+	-->
+	<bean id="children3" parent="children1" p:age="4" scope="prototype">
 	</bean>
 
 	<bean id="myTestBean" class="com.ali.beanmodule.PersonBean">
@@ -26,6 +38,10 @@
 		<property name="salary" value="24900.2"></property>
 	</bean>
 	
+	
+	<!-- 
+		bean中 包含集合类型的属性注入方式
+	 -->
 	<bean id="myTestBean2" class="com.ali.beanmodule.PersonBean">
 		<constructor-arg value="Jake" ></constructor-arg>
 		<constructor-arg value="Michael" ></constructor-arg>
@@ -40,4 +56,12 @@
 		</constructor-arg>
 	</bean>
 
+	<context:property-placeholder location="classpath:db-pro.properties"/>
+	
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="user" value="${user}"></property>
+		<property name="password" value="${password}"></property>
+		<property name="driverClass" value="${driverclass}"></property>
+		<property name="jdbcUrl" value="${jdbcurl}"></property>
+	</bean>
 </beans>
