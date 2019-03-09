@@ -10,7 +10,8 @@ bean配置的继承: 使用parent属性
 bean配置位置的确定: 可使用 type index属性  
 bean配置为集合类型：使用对应的集合类型如  list、map  
 bean配置的引用:可使用 ref属性  
-如 [applicationContext.xml](https://github.com/Egnaxela/springLearning/blob/master/src/applicationContext.xml)
+如 [applicationContext.xml](https://github.com/Egnaxela/springLearning/blob/master/src/applicationContext.xml)  
+引入外部文件
 <context:property-placeholder location="classpath:db-pro.properties"/>
 
 bean的默认作用域是单例的 即 <bean scope="singleton"/>
