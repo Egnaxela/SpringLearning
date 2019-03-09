@@ -56,6 +56,9 @@
 		</constructor-arg>
 	</bean>
 
+	<!-- 
+		引入外部资源文件
+	 -->
 	<context:property-placeholder location="classpath:db-pro.properties"/>
 	
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
