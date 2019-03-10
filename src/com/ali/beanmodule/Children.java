@@ -33,8 +33,7 @@ public class Children {
 	 * 
 	 */
 	public Children() {
-		super();
-		// TODO Auto-generated constructor stub
+		System.out.println("Children Constructor*******************");
 	}
 	/**
 	 * @param firstName
@@ -57,6 +56,7 @@ public class Children {
 	 * @param firstName the firstName to set
 	 */
 	public void setFirstName(String firstName) {
+		System.out.println("Set FirstName*************");
 		this.firstName = firstName;
 	}
 	/**
@@ -89,5 +89,11 @@ public class Children {
 	}
 	
 	
-
+	public void initParams() {
+		System.out.println("Children  init method *****************");
+	}
+	
+	public void destroyPro() {
+		System.out.println("Children  destroy method*************");
+	}
 }

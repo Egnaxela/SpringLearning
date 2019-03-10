@@ -21,5 +21,12 @@ bean的默认作用域是单例的 即 <bean scope="singleton"/>
 * scope="session" 每一次HTTP请求都会创建一个新的实例，该bean只在当前session内有效.
 
 #### Bean的生命周期
+* 通过构造器创建Bean的实例
+* 为Bean的属性设置值或赋给其他Bean的引用
+* 将Bean的实例传递给Bean的后置处理器的 postProcessBeforeInitialization方法
+* 调用Bean的初始化方法 init-method
+* 将Bean的实例传递给Bean的后置处理器的 postProcessAfterInitialization方法
+* 此时就可以使用Bean了
+* 当容器关闭时,调用bean的销毁方法 destroy-method
 
 

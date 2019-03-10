@@ -6,6 +6,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
+	<bean id="children4" class="com.ali.beanmodule.Children" init-method="initParams" destroy-method="destroyPro">
+		<property name="firstName" value="Marry"></property>
+		<property name="gender" value="M"></property>
+		<property name="age" value="4"></property>
+	</bean>
 
 	<!-- 
 		基于setter的属性注入方式,bean中必须要有set方法,必须要有一个无参的构造器

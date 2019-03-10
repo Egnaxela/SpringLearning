@@ -58,5 +58,10 @@ public class BeanFactoryTest {
 		DataSource dataSource=(DataSource) ctx.getBean("dataSource");
 		System.out.println(dataSource.getConnection());
 		
+		//bean容器在IOC容器中的生命周期
+		ClassPathXmlApplicationContext ctx2=new ClassPathXmlApplicationContext("applicationContext-cycle.xml");
+		Children children3=(Children) ctx2.getBean("children4");
+		System.out.println("\n"+children3);
+		ctx2.close();
 	}
 }

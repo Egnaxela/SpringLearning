@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<!-- 
+		配置Bean的初始化方法和销毁方法
+	 -->
+	<bean id="children4" class="com.ali.beanmodule.Children" init-method="initParams" destroy-method="destroyPro">
+		<property name="firstName" value="Marry"></property>
+		<property name="gender" value="M"></property>
+		<property name="age" value="4"></property>
+	</bean>
+	
+	
+	<!-- 
+		配置Bean的后置处理器
+	 -->
+	<bean class="com.ali.beanmodule.MyBeanPostProcessor">
+	</bean>
+	
+</beans>
