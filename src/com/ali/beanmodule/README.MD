@@ -22,3 +22,4 @@ bean的默认作用域是单例的 即 <bean scope="singleton"/>
 
 #### Bean的生命周期
 
+
