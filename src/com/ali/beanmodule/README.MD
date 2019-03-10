@@ -30,3 +30,4 @@ bean的默认作用域是单例的 即 <bean scope="singleton"/>
 * 当容器关闭时,调用bean的销毁方法 destroy-method
 
 
+
