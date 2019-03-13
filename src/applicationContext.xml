@@ -72,4 +72,5 @@
 		<property name="driverClass" value="${driverclass}"></property>
 		<property name="jdbcUrl" value="${jdbcurl}"></property>
 	</bean>
+	
 </beans>

@@ -22,4 +22,5 @@
 	<bean class="com.ali.beanmodule.MyBeanPostProcessor">
 	</bean>
 	
+	
 </beans>
