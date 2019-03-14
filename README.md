@@ -4,7 +4,7 @@
 ### Spring源码学习
 - [SpringFramework](#Spring-Framwork)
   - [结构组成](#结构组成)
-  - [IOC与AOP](#IOC-AOP)
+  - [IOC AOP](#IOC-AOP)
 - [Spring Boot](#Spring-Boot)
   - [基础概念](#基础概念)
   - [底层原理](#底层原理)
@@ -33,12 +33,13 @@ Spring框架是一个轻量级的(Spring 全家桶)、Java企业级应用的开�
 5. Test  
     Test模块提供了对JUnit和TestNG对Spring组件测试  
 
-Spring中核心的类：DefaultListableBeanFactory、XmlBeanDefinitionReader
+Spring中核心的类：DefaultListableBeanFactory、XmlBeanDefinitionReader  
+
 ##### IOC AOP
 IOC
 
 AOP  
-Aspect Oriented Programming即面向切面编程, 大概就是把业务流程中通用的功能抽取出来，形成独立的切面，在需要的时候再把这些切面切入到具体的位置中。
+Aspect Oriented Programming即**面向切面编程**, 大概就是把业务流程中通用的功能抽取出来，形成独立的切面，在需要的时候再把这些切面切入到具体的位置中。  
 Spring框架的AOP机制可以把业务流程中的通用功能抽取出来形成一个个切面，单独编写功能代码。再在实际的业务流程执行过程中，Spring框架会根据业务流程要求，自动把独立编写的功能代码切入到流程的合适位置。
 
 
