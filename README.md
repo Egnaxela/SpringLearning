@@ -35,6 +35,11 @@ Spring框架是一个轻量级的(Spring 全家桶)、Java企业级应用的开�
 
 Spring中核心的类：DefaultListableBeanFactory、XmlBeanDefinitionReader
 ##### IOC AOP
+IOC
+
+AOP  
+Aspect Oriented Programming即面向切面编程, 大概就是把业务流程中通用的功能抽取出来，形成独立的切面，在需要的时候再把这些切面切入到具体的位置中。
+Spring框架的AOP机制可以把业务流程中的通用功能抽取出来形成一个个切面，单独编写功能代码。再在实际的业务流程执行过程中，Spring框架会根据业务流程要求，自动把独立编写的功能代码切入到流程的合适位置。
 
 
 #### Spring Boot
